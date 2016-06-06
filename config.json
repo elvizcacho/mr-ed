@@ -1,0 +1,9 @@
+{
+	"url": {
+		"dev": "https://ed-dev.mercadoni.com/",
+		"development": "https://ed-dev.mercadoni.com/",
+		"live": "https://ed.mercadoni.com/",
+		"production": "https://ed.mercadoni.com/",
+		"local": "http://localhost:8020/"
+	}
+}
