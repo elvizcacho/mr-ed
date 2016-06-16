@@ -2,10 +2,12 @@ var request = require('request');
 
 var isStateMachineEvent = function(name) {
 	return (
-		name === 'order_complete' ||
+		name === 'order_completed' ||
+		name === 'order_all_delivered' ||
 		name === 'order_cancel' ||
 		name === 'order_checkout' ||
 		name === 'order_pending_verification' ||
+		name === 'retailer_product_checkout' ||
 		name === 'retailer_product_order_pre_taken' ||
 		name === 'retailer_product_order_taken' ||
 		name === 'retailer_product_shopping' ||
