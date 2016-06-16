@@ -11,7 +11,7 @@ npm mr-ed --save
 ```javascript
 //import the module to your project (where you initialise your node server)
 var ed = require('mr-ed');
-//set your webhook and username which will be displayed on the messages.
+//connect to ED
 ed.connect({
 	token: 'token_provided_by_mercadoni',
 	env: 'local|development|live|dev|production'
