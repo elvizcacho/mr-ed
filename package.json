@@ -1,6 +1,6 @@
 {
 	"name": "mr-ed",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"description": "Mr. Ed",
 	"main": "index.js",
 	"scripts": {
