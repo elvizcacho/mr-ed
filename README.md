@@ -45,8 +45,8 @@ By default, the events below exists in ED and any app can subscribe to them:
 * retailer_product_reset_to_processing
 * retailer_product_has_been_rated
 * delivery_time_has_changed
-* active_has_changed
-* availability_has_changed
+* shopper.active_has_changed
+* shopper.availability_has_changed
 * shopper_status_going_to_customer
 * shopper_status_shopping
 * shopper_status_idle
