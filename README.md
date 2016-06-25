@@ -22,7 +22,7 @@ ed.connect({
 
 #### Listen for an event
 ```javascript
-ed.events.emitter.on('event_name' , function(data){
+ed.events.emitter.on('event_name' , function(data, oldData, extraData){
  ...	
 });
 ```
@@ -44,6 +44,15 @@ By default, the events below exists in ED and any app can subscribe to them:
 * retailer_product_cancel
 * retailer_product_reset_to_processing
 * retailer_product_has_been_rated
+* delivery_time_has_changed
+* active_has_changed
+* availability_has_changed
+* shopper_status_going_to_customer
+* shopper_status_shopping
+* shopper_status_idle
+* shopper_status_going_to_retailer
+* order_cash_payment_completed
+* retailer_product_cash_client_pays
 
 
 ## Subscribers
