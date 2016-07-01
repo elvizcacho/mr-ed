@@ -9,7 +9,7 @@ function Ed() {}
 
 Ed.prototype.router = function(app) {
 	app.post('/events/:event', function(req, res, next) {
-		emitter.emit(req.params.event, req.body.new, req.body.old, req.body.data);
+		emitter.emit(req.params.event, req.body.data, req.body.old, req.body.extraData);
 		res.send({
 			msg: 'ok'
 		});
