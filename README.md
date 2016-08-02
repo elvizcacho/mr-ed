@@ -1,5 +1,5 @@
 # Mr. Ed
-Easiest way to subscribe to Mercadoni's events
+Easiest way to subscribe to Mercadoni's events.
 
 ## How to use
 
