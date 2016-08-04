@@ -2,6 +2,7 @@
 	"url": {
 		"dev": "https://ed-dev.mercadoni.com/",
 		"development": "https://ed-dev.mercadoni.com/",
+		"staging": "https://ed-staging.mercadoni.com/",
 		"live": "https://ed.mercadoni.com/",
 		"production": "https://ed.mercadoni.com/",
 		"local": "http://localhost:8020/"

@@ -33,7 +33,7 @@ Ed.prototype.connect = function() {
 	}
 	if (!data.token) throw new Error('Not token provided');
 	if (!data.env) throw new Error('Not env provided');
-	if (!(data.env === 'dev' || data.env === 'live' || data.env === 'production' || data.env === 'local' || data.env === 'development')) throw new Error('Env value wrong. Try dev live or local');
+	if (!(data.env === 'dev' || data.env === 'live' || data.env === 'production' || data.env === 'local' || data.env === 'development' || data.env === 'staging')) throw new Error('Env value wrong. Try dev live or local');
 	this.token = data.token;
 	this.env = data.env;
 	this.url = config.url[this.env];
