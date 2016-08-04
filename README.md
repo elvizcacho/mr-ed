@@ -14,7 +14,7 @@ var ed = require('mr-ed');
 //connect to ED
 ed.connect({
 	token: 'token_provided_by_mercadoni',
-	env: 'local|development|live|dev|production'
+	env: 'local|development|live|dev|production|staging'
 }, app); // app is an optional parameter that you can use to integrate this module with express (app is an express app) and let ed handle the events for you.
 ```
 
