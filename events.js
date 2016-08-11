@@ -35,7 +35,8 @@ Events.prototype.trigger = function(name, data, cb) {
 		json: true,
 		body: JSON.parse(JSON.stringify(data))
 	}, function(err, res, body) {
-		cb(err, body, res);
+		if (body) body.responseStatusCode = res.statusCode;
+		cb(err, body);
 	});
 };
 
