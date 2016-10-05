@@ -21,9 +21,10 @@ var isStateMachineEvent = function(name) {
 
 function Events() {}
 
-Events.prototype.init = function(token, url) {
+Events.prototype.init = function(token, url, headers) {
 	this.token = token;
 	this.url = url;
+	this.headers = headers || {};
 };
 
 Events.prototype.trigger = function(name, data, cb) {
@@ -31,6 +32,7 @@ Events.prototype.trigger = function(name, data, cb) {
 	data.name = name;
 	request({
 		url: url + '?token=' + this.token,
+		headers: this.headers,
 		method: 'POST',
 		json: true,
 		body: JSON.parse(JSON.stringify(data))
