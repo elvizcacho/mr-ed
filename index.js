@@ -37,8 +37,9 @@ Ed.prototype.connect = function() {
 	this.token = data.token;
 	this.env = data.env;
 	this.url = config.url[this.env];
+	this.headers = data.headers || {};
 	this.subscribers.init(this.token, this.url);
-	this.events.init(this.token, this.url);
+	this.events.init(this.token, this.url, this.headers);
 };
 
 
